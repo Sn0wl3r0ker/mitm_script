@@ -3,10 +3,10 @@
 HashPhotos：https://apps.apple.com/app/id685784609
 
 [rewrite_local]
-^https?:\/\/p11\-buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Sn0wl3r0ker/mitm_script/refs/heads/main/HashPhotos.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Sn0wl3r0ker/mitm_script/refs/heads/main/HashPhotos.js
 
 [MITM]
-hostname = p11-buy.itunes.apple.com
+hostname = *buy.itunes.apple.com
 
 */
 var guding = JSON.parse($response.body);
