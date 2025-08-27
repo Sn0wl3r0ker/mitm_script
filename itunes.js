@@ -12,7 +12,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Sn0wl3r0ker/mitm_script/refs/heads/main/iTunes.js
+^https?:\/\/inappcheck\.buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/Sn0wl3r0ker/mitm_script/refs/heads/main/itunes.js
 
 [mitm]
 hostname = buy.itunes.apple.com, *buy.itunes.apple.com, inappcheck.itunes.apple.com, p11-buy.itunes.apple.com
